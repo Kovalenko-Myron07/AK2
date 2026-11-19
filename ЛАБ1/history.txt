@@ -1,0 +1,78 @@
+    1  history
+    2  uname -a
+    3  sudo apt update
+    4  cat /etc/apt/sources.list
+    5  vim --version
+    6  cd ~
+    7  cd Загрузки
+    8  ls -la
+    9  dpkg -i test.deb
+   10  sudo dpkg -i test.deb
+   11  cd /
+   12  sudo su
+   13  echo "hi all"
+   14  echo "$PWD hi all here!"
+   15  cd ~ && touch hi.sh
+   16  echo $PATH
+   17  printf '#!/bin/bash\necho "Hello $1"\n' > hi.sh
+   18  ./hi.sh
+   19  chmod a+x hi.sh
+   20  chmod 777 hi.sh
+   21  ./hi.sh
+   22  ./hi.sh Ukraine
+   23  mkdir scripts && cp hi.sh scripts/
+   24  cp scripts Загрузки/
+   25  cd scripts
+   26  mv hi.sh ..
+   27  cd ..
+   28  rm scripts
+   29  rm -r scripts
+   30  cd /bin
+   31  ls -l
+   32  cd ../..
+   33  cd ~ && mkdir scripts && tar -cvf scripts.tar scripts/
+   34  cat hi.sh
+   35  tail -n 20 /var/log/syslog
+   36  cd /
+   37  find . -name "dhcp" 2>/dev/null
+   38  find . -name "*dhcp*" 2>/dev/null
+   39  find . -name "*dhcp*" 2>/dev/null | grep -i --color=auto "dhcp"
+   40  find . -name "*dhcp*" 2>/dev/null | grep -i --color=auto "etc"
+   41  cd ~
+   42  ping -c 3 google.com
+   43  ping google.com > ping.log & date
+   44  sudo ping google.com > /dev/null &
+   45  ls -l
+   46  cd /bin
+   47  ls
+   48  echo $PATH
+   49  printenv
+   50  whoami
+   51  cd /etc/
+   52  ls
+   53  cd ..
+   54  cd lib
+   55  ls
+   56  dmesg
+   57  sudo dmesg
+   58  ls /dev
+   59  sudo dmesg -c
+   60  sudo dmesg
+   61  df -h
+   62  cd /home
+   63  ls -l
+   64  lsmod
+   65  cd /proc
+   66  cat cpuinfo
+   67  echo 1 > /proc/sys/net/ipv4/ip_forward
+   68  sudo su
+   69  ip a
+   70  ip link show
+   71  cd ~
+   72  echo "vika" > 1.txt
+   73  cat 1.txt
+   74  echo "vasya" > 2.txt
+   75  cat 2.txt
+   76  diff 1.txt 2.txt
+   77  lspci
+   78  history -n && date && whoami && history > history.txt
