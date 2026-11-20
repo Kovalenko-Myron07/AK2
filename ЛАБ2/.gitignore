@@ -1,0 +1,4 @@
+build/
+calculator_app
+*.o
+*.a
